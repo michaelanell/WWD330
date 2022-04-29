@@ -7,8 +7,8 @@
 
     <title>WWD Week Two Notes</title>
 
-  <link href="css/small.css" rel="stylesheet" type="text/css">
-  <link href="css/medium.css" rel="stylesheet" type="text/css">
+    <link href="css/small.css" rel="stylesheet" type="text/css">
+    <link href="css/medium.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -19,23 +19,21 @@
         <li>
             <h3>Chapter 2: Programming Basics</h3><br>
             <ul>
-                <li>Primitive data types:
-                </li>
                 <li>Primitive data types: <br>
                     <ul>
                         <li>String</li>
                         <li>Symbol</li>
-			<li>Number - just number, not float or int</li>
+                        <li>Number - just number, not float or int</li>
                         <li>Boolean</li>
                         <li>Undefined</li>
                         <li>Null</li>
                     </ul>
                 </li>
-                <li>Assigning and Declaring Variables: <br>
+                <li>Declaring Variables: <br>
                     <ul>
                         <li>Const - for variables ment to stay constant</li>
                         <li>Let - for variables allowed to change</li>
-			<li>Let and const have block scope</li>
+                        <li>Let and const have block scope</li>
                     </ul>
                 </li>
                 <li>Naming Conventions in JavaScript <br>
@@ -43,43 +41,97 @@
                         <li>Can start with upper or lower case letters, an underscore, dollar sign</li>
                         <li>Cannot contain numbers at start, but can contain them in other parts of name</li>
                         <li>Names that start with an underscore usually refer to private properties and methods</li>
+                        <li>Variable names area case sensitive</li>
+                        <li>Camel case is propobably best to use for naming, but underscore separated words are also
+                            often used</li>
                     </ul>
                 </li>
-                <li>To Enforce Importance of Mobile First:
-                    <ul>
-                        <li>Desktop sales declining since 2011</li>
-                        <li>Consumers purchase smaller devices of varying sizes at a high rate with
-                            a high turnover</li>
-                        <li>Companies that manufacture devices make few desktops and many more smaller
-                            devices such as laptops, tablets, and smartphones.</li>
-                        <li>Mobile is not a fad.</li>
-                    </ul>
-                </li>
+
             </ul>
         </li>
         <li>
-            <h3>How to Improve UX by Understanding Users</h3> <br>
+            <h3>Chapter 2 - Arrays</h3> <br>
             <ul>
-                <li>Be there - be there when your customers need you.</li>
-                <li>Be useful - 97% of users will leave if your application is not user friendly.</li>
-                <li>Be quick - make interactions smoothe and seamless. Use as little steps for users to
-                    accomplish what they need to with your application.</li>
-                <li>Reachability matters - 75% of people use their thumbs when using mobile and 49% use a one
-                    handed grip. Easier to reach things at the bottom of the device based on grip.</li>
-                <li>Speed matters - delays lead to users abandoing applications.</li>
-                <li>Networks matter - many users dont have access to fast networks. To hekp these users have a
-                    good
-                    experiance: <br>
+                <li>Arrays:
                     <ul>
-                        <li>Reduce image usage on site/app.</li>
-                        <li>SVG/Webfonts are lower bandwith.</li>
-                        <li>Optimize and minify CSS and JS files</li>
-                        <li>GZIP files to eliminate unnecessary data</li>
+                        <li>To declare an array in JavaScript:<br>
+                            <ul>
+                                <li>const arrayName = []; - dont have to declare size</li>
+                                <li>Initializing a singe element<br>
+                                    <ul>
+                                        <li>arrayName[0] = 'value1';</li>
+                                    </ul>
+                                </li>
+                                <li>Array Literals<br>
+                                    <ul>
+                                        <li>literal - notation for representig a fixed value in source code</li>
+                                        <li>arrayName = ['Value 1', 'Value 2', 'Value 3', 'Value 4', 'Value 5','Value
+                                            6'];</li>
+                                    </ul>
+                                </li>
+                                <li>You can add any type of value to an array, one array
+                                    can contain a variety of data types:
+                                    <ul>
+                                        <li>arrayName = ['Value 1', 2, [], true];</li>
+                                    </ul>
+                                </li>
+                                <li>Array Operations: <br>
+                                    <ul>
+                                        <li>Removing values: <br>
+                                            <ul>
+                                                <li>The delete operator removes array items: <br>
+                                                    <ul>
+                                                        <li>delete arrayName[3] //returns undefined</li>
+                                                        <li>The value at place arrayName[3] will be removed from
+                                                            the array and
+                                                            be replaced with value undefined - The space
+                                                            myArray[3] will still
+                                                            exist in the array, just the value is removed and
+                                                            replaced</li>
+                                                    </ul>
+                                                </li>
+                                                <li>.length method - returns length of method </li>
+                                                <li>.pop() method - removes the last item from an array</li>
+                                                <li>.shift() method - removes the first item in an array </li>
+                                                <li>.push method - appends new value to end of array</li>
+                                                <li>.unshift() method - appends new items to beginning of array</li>
+                                                <li>.conacat method - merge arrays</li>
+                                                <li>.join() method - turn an array into a string that contains all the
+                                                    items in the
+                                                    array separated by commas.</li>
+                                                <li>.slice() method - creates a sub array from a 'slice' of the orginal
+                                                    array. It takes two
+                                                    parameters - the first number refers to the item posistion of the
+                                                    array that you would like to start the slice from.
+                                                    The second refers to the item position of the array that you would
+                                                    like to end the slice on.
+                                                </li>
+                                                <li>.splice() method - removes items from an array then inserts new
+                                                    items into their place. It takes 3 parameters.
+                                                    The first two are numbers that dictate the to and from item
+                                                    positions in the array that you would like to remove. The third
+                                                    is the item value that is to replace the ones you remove. You can
+                                                    add more than one parameter for this purpose, and each item
+                                                    will be put in place of the ones you removed in order.
+
+                                                </li>
+                                                <li>.reverse() method - reverses order of array</li>
+                                                <li>.sort() method - sorts the order of array</li>
+                                                <li>.indexOf() method - checks if a value exists in an array. If the
+                                                    value is there the (first occurance of the) index of the item will
+                                                    be returned.</li>
+                                            </ul>
+                                        </li>
+                                        <li>Mutidimentional Arrays - an array of arrays</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
         <li>
-            <h3>Better Mobile UX with Strategic Menu Design</h3><br>
+            <h3>Chapter 2 - Sets</h3><br>
             <ul>
                 <li>Make software easier to use.</li>
                 <li> Make most commonly used menu items at the bottom of the
@@ -134,8 +186,6 @@
     </li>
     </li>
     </ul>
-
-
     <script src="js/main.js"></script>
 </body>
 
