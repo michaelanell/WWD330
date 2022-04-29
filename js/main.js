@@ -1,7 +1,7 @@
 function createMenuItems() {
 let weeklyTopics = new Map();
 
-weeklyTopics.set('Week One','/week_one').set('Week Two', '/week_two');
+weeklyTopics.set('Week One','week_one').set('Week Two', 'week_two');
 
 topicsMenu = Array.from(weeklyTopics);
 
