@@ -14,7 +14,7 @@
 <body>
     <h1>Week Two Notes</h1>
     <h2>JavaScript: Novice To Ninja - Sitepoint</h2>
-
+    <h3>Key notes from chapters 2-4</h3>
     <ul>
         <li>
             <h3>Chapter 2: Programming Basics</h3><br>
@@ -50,7 +50,7 @@
             </ul>
         </li>
         <li>
-            <h3>Chapter 2 - Arrays</h3> <br>
+            <h3>Chapter 3 - Arrays</h3> <br>
             <ul>
                 <li>To declare an array in JavaScript:<br>
                     <ul>
@@ -74,6 +74,7 @@
                             </ul>
                         </li>
                         <li>Array Operations: <br>
+                            ** Very similar to python array notation.
                             <ul>
                                 <li>Removing values: <br>
                                     <ul>
@@ -122,89 +123,104 @@
                                 </li>
                                 <li>Mutidimentional Arrays - an array of arrays</li>
                             </ul>
-                        <li>
-                            <h3>Chapter 2 - Sets</h3><br>
-                            <ul>
-                                <li>Data structure that represents collection of unique key values. </li>
-                                <li>Cannot hold duplicates </li>
-                                <li>To create a new set: <br>
-                                    <ul>
-                                        <li>const setName = new Set();</li>
-                                    </ul>
-                                </li>
-                                <li>.add() method - adds values to sets</li>
-                                <li>* if a string is added as an element, each character will be added seperately and
-                                    duplicate
-                                    characters will
-                                    not be added.
-                                </li>
-                                <li>.delete(), .has(), .includes(), .indexOf(), .size(), .clear() are all self
-                                    explanatory methods of
-                                    sets. </li>
-                                <li>How to convert a set into a string: <br>
-                                    <ul>
-                                        <li>2 ways:</li>
-                                        <li>Spread operator - const arrayName = [...setName];</li>
-                                        <li>Array.from() method - const arrayName = Array.from(setName);</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>Chapter 2 - Maps</h3><br>
-                            <ul>
-                                <li>Way to store key-pair values.</li>
-                                <li>Can use any data type as a key.</li>
-                                <li>Creating a map: <br>
-                                    <ul>
-                                        <li>const mapName = new Map();</li>
-                                    </ul>
-                                </li>
-                                <li>Adding pairs to a map: <br>
-                                    <ul>
-                                        <li>mapName.set(1, 'S');</li>
-                                    </ul>
-                                </li>
-                                <li>.get(), .has(), .size(), .delete(), .clear()</li>
-                                <li>* A map can be created with multiple values by using a nested array as parameter:
-                                    <br>
-                                    <ul>
-                                        <li>const mapName = new Map([['apples', 'oranges', 'pears'], ['Jane', 'John']]);
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>Converting Maps into Arrays <br>
-                                    <ul>
-                                        <li>Like sets there are 2 ways: <br>
-                                            <ul>
-                                                <li>Spread operator - const arrayName = [...mapName];</li>
-                                                <li>Array.from() - const arrayName = Array.from(mapName);</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-
-                        <li>
-                            <h3>Designing a Better Mobile Advertising User Experience</h3><br>
-                            <ul>
-                                <li>Pop-up advirtisments are the most detested advertisements to users. When ads get in
-                                    the way
-                                    of content
-                                    you loose engagment. If you are going to place ads in your site, make them small,
-                                    dont let
-                                    them take
-                                    up 40-50% of your screen space. Video ads have higher converstion rates than
-                                    pictures.</li>
-                                <li>Things to remember: <br>
-                                <li>Stop using pop-ups and pop-overs</li>
-                                <li>Users dont visit your website to look at adds, they came for content.</li>
-                                <li>If you use ads, make them unobstrusive. Your content comes first.</li>
                         </li>
                     </ul>
                 </li>
+            </ul>
         </li>
+
+        <li>
+            <h3>Chapter 3 - Sets</h3><br>
+            <ul>
+                <li>Data structure that represents collection of unique key values. </li>
+                <li>Cannot hold duplicates </li>
+                <li>To create a new set: <br>
+                    <ul>
+                        <li>const setName = new Set();</li>
+                    </ul>
+                </li>
+                <li>.add() method - adds values to sets</li>
+                <li>* if a string is added as an element, each character will be added seperately and
+                    duplicate
+                    characters will
+                    not be added.
+                </li>
+                <li>.delete(), .has(), .includes(), .indexOf(), .size(), .clear() are all self
+                    explanatory methods of
+                    sets. </li>
+                <li>How to convert a set into a string: <br>
+                    <ul>
+                        <li>2 ways:</li>
+                        <li>Spread operator - const arrayName = [...setName];</li>
+                        <li>Array.from() method - const arrayName = Array.from(setName);</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Chapter 3 - Maps</h3><br>
+            <ul>
+                <li>Way to store key-pair values.</li>
+                <li>Can use any data type as a key.</li>
+                <li>Creating a map: <br>
+                    <ul>
+                        <li>const mapName = new Map();</li>
+                    </ul>
+                </li>
+                <li>Adding pairs to a map: <br>
+                    <ul>
+                        <li>mapName.set(1, 'S');</li>
+                    </ul>
+                </li>
+                <li>.get(), .has(), .size(), .delete(), .clear()</li>
+                <li>* A map can be created with multiple values by using a nested array as parameter:
+                    <br>
+                    <ul>
+                        <li>const mapName = new Map([['apples', 'oranges', 'pears'], ['Jane', 'John']]);
+                        </li>
+                    </ul>
+                </li>
+                <li>Converting Maps into Arrays <br>
+                    <ul>
+                        <li>Like sets there are 2 ways: <br>
+                            <ul>
+                                <li>Spread operator - const arrayName = [...mapName];</li>
+                                <li>Array.from() - const arrayName = Array.from(mapName);</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+
+        <li>
+            <h3>Chapter 4 - Functions</h3><br>
+            <ul>
+                <li>To declare a function: <br>
+                    <ul>
+                        <li>function functionName() {
+                            // code block
+                            }
+                        </li>
+                    </ul>
+                </li>
+                <li>Function Expressions <br>
+                    This assigns an anonymous function to a variable like so: <br>
+                    <ul>
+                        <li>const functionName = function() {
+                            // code block
+                            };
+                        </li>
+                        <li>This is considered anonymous because it does not have a name. It is created then assigned to
+                            a variable. </li>
+                        <li>*Note that function expressions end with a semicolon.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
     </ul>
     <script src="js/main.js"></script>
 </body>
