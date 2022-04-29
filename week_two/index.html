@@ -52,139 +52,259 @@
         <li>
             <h3>Chapter 2 - Arrays</h3> <br>
             <ul>
-                <li>Arrays:
+                <<<<<<< HEAD <li>To declare an array in JavaScript:<br>
                     <ul>
-                        <li>To declare an array in JavaScript:<br>
+                        <li>const arrayName = []; - dont have to declare size</li>
+                        <li>Initializing a singe element<br>
                             <ul>
-                                <li>const arrayName = []; - dont have to declare size</li>
-                                <li>Initializing a singe element<br>
+                                <li>arrayName[0] = 'value1';</li>
+                            </ul>
+                        </li>
+                        <li>Array Literals<br>
+                            <ul>
+                                <li>literal - notation for representig a fixed value in source code</li>
+                                <li>arrayName = ['Value 1', 'Value 2', 'Value 3', 'Value 4', 'Value 5','Value
+                                    6'];</li>
+                            </ul>
+                        </li>
+                        <li>You can add any type of value to an array, one array
+                            can contain a variety of data types:
+                            <ul>
+                                <li>arrayName = ['Value 1', 2, [], true];</li>
+                            </ul>
+                        </li>
+                        <li>Array Operations: <br>
+                            <ul>
+                                <li>Removing values: <br>
                                     <ul>
-                                        <li>arrayName[0] = 'value1';</li>
-                                    </ul>
-                                </li>
-                                <li>Array Literals<br>
-                                    <ul>
-                                        <li>literal - notation for representig a fixed value in source code</li>
-                                        <li>arrayName = ['Value 1', 'Value 2', 'Value 3', 'Value 4', 'Value 5','Value
-                                            6'];</li>
-                                    </ul>
-                                </li>
-                                <li>You can add any type of value to an array, one array
-                                    can contain a variety of data types:
-                                    <ul>
-                                        <li>arrayName = ['Value 1', 2, [], true];</li>
-                                    </ul>
-                                </li>
-                                <li>Array Operations: <br>
-                                    <ul>
-                                        <li>Removing values: <br>
+                                        <li>The delete operator removes array items: <br>
                                             <ul>
-                                                <li>The delete operator removes array items: <br>
-                                                    <ul>
-                                                        <li>delete arrayName[3] //returns undefined</li>
-                                                        <li>The value at place arrayName[3] will be removed from
-                                                            the array and
-                                                            be replaced with value undefined - The space
-                                                            myArray[3] will still
-                                                            exist in the array, just the value is removed and
-                                                            replaced</li>
-                                                    </ul>
-                                                </li>
-                                                <li>.length method - returns length of method </li>
-                                                <li>.pop() method - removes the last item from an array</li>
-                                                <li>.shift() method - removes the first item in an array </li>
-                                                <li>.push method - appends new value to end of array</li>
-                                                <li>.unshift() method - appends new items to beginning of array</li>
-                                                <li>.conacat method - merge arrays</li>
-                                                <li>.join() method - turn an array into a string that contains all the
-                                                    items in the
-                                                    array separated by commas.</li>
-                                                <li>.slice() method - creates a sub array from a 'slice' of the orginal
-                                                    array. It takes two
-                                                    parameters - the first number refers to the item posistion of the
-                                                    array that you would like to start the slice from.
-                                                    The second refers to the item position of the array that you would
-                                                    like to end the slice on.
-                                                </li>
-                                                <li>.splice() method - removes items from an array then inserts new
-                                                    items into their place. It takes 3 parameters.
-                                                    The first two are numbers that dictate the to and from item
-                                                    positions in the array that you would like to remove. The third
-                                                    is the item value that is to replace the ones you remove. You can
-                                                    add more than one parameter for this purpose, and each item
-                                                    will be put in place of the ones you removed in order.
-
-                                                </li>
-                                                <li>.reverse() method - reverses order of array</li>
-                                                <li>.sort() method - sorts the order of array</li>
-                                                <li>.indexOf() method - checks if a value exists in an array. If the
-                                                    value is there the (first occurance of the) index of the item will
-                                                    be returned.</li>
+                                                <li>delete arrayName[3] //returns undefined</li>
+                                                <li>The value at place arrayName[3] will be removed from
+                                                    the array and
+                                                    be replaced with value undefined - The space
+                                                    myArray[3] will still
+                                                    exist in the array, just the value is removed and
+                                                    replaced</li>
                                             </ul>
                                         </li>
-                                        <li>Mutidimentional Arrays - an array of arrays</li>
+                                        <li>.length method - returns length of method </li>
+                                        <li>.pop() method - removes the last item from an array</li>
+                                        <li>.shift() method - removes the first item in an array </li>
+                                        <li>.push method - appends new value to end of array</li>
+                                        <li>.unshift() method - appends new items to beginning of array</li>
+                                        <li>.conacat method - merge arrays</li>
+                                        <li>.join() method - turn an array into a string that contains all the
+                                            items in the
+                                            array separated by commas.</li>
+                                        <li>.slice() method - creates a sub array from a 'slice' of the orginal
+                                            array. It takes two
+                                            parameters - the first number refers to the item posistion of the
+                                            array that you would like to start the slice from.
+                                            The second refers to the item position of the array that you would
+                                            like to end the slice on.
+                                        </li>
+                                        <li>.splice() method - removes items from an array then inserts new
+                                            items into their place. It takes 3 parameters.
+                                            The first two are numbers that dictate the to and from item
+                                            positions in the array that you would like to remove. The third
+                                            is the item value that is to replace the ones you remove. You can
+                                            add more than one parameter for this purpose, and each item
+                                            will be put in place of the ones you removed in order.
+
+                                        </li>
+                                        <li>.reverse() method - reverses order of array</li>
+                                        <li>.sort() method - sorts the order of array</li>
+                                        <li>.indexOf() method - checks if a value exists in an array. If the
+                                            value is there the (first occurance of the) index of the item will
+                                            be returned.</li>
+                                    </ul>
+                                </li>
+                                <li>Mutidimentional Arrays - an array of arrays</li>
+                                =======
+                                <li>Arrays:
+                                    <ul>
+                                        <li>To declare an array in JavaScript:<br>
+                                            <ul>
+                                                <li>const arrayName = []; - dont have to declare size</li>
+                                                <li>Initializing a singe element<br>
+                                                    <ul>
+                                                        <li>arrayName[0] = 'value1';</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Array Literals<br>
+                                                    <ul>
+                                                        <li>literal - notation for representig a fixed value in source
+                                                            code</li>
+                                                        <li>arrayName = ['Value 1', 'Value 2', 'Value 3', 'Value 4',
+                                                            'Value 5','Value
+                                                            6'];</li>
+                                                    </ul>
+                                                </li>
+                                                <li>You can add any type of value to an array, one array
+                                                    can contain a variety of data types:
+                                                    <ul>
+                                                        <li>arrayName = ['Value 1', 2, [], true];</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Array Operations: <br>
+                                                    <ul>
+                                                        <li>Removing values: <br>
+                                                            <ul>
+                                                                <li>The delete operator removes array items: <br>
+                                                                    <ul>
+                                                                        <li>delete arrayName[3] //returns undefined</li>
+                                                                        <li>The value at place arrayName[3] will be
+                                                                            removed from
+                                                                            the array and
+                                                                            be replaced with value undefined - The space
+                                                                            myArray[3] will still
+                                                                            exist in the array, just the value is
+                                                                            removed and
+                                                                            replaced</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>.length method - returns length of method </li>
+                                                                <li>.pop() method - removes the last item from an array
+                                                                </li>
+                                                                <li>.shift() method - removes the first item in an array
+                                                                </li>
+                                                                <li>.push method - appends new value to end of array
+                                                                </li>
+                                                                <li>.unshift() method - appends new items to beginning
+                                                                    of array</li>
+                                                                <li>.conacat method - merge arrays</li>
+                                                                <li>.join() method - turn an array into a string that
+                                                                    contains all the
+                                                                    items in the
+                                                                    array separated by commas.</li>
+                                                                <li>.slice() method - creates a sub array from a 'slice'
+                                                                    of the orginal
+                                                                    array. It takes two
+                                                                    parameters - the first number refers to the item
+                                                                    posistion of the
+                                                                    array that you would like to start the slice from.
+                                                                    The second refers to the item position of the array
+                                                                    that you would
+                                                                    like to end the slice on.
+                                                                </li>
+                                                                <li>.splice() method - removes items from an array then
+                                                                    inserts new
+                                                                    items into their place. It takes 3 parameters.
+                                                                    The first two are numbers that dictate the to and
+                                                                    from item
+                                                                    positions in the array that you would like to
+                                                                    remove. The third
+                                                                    is the item value that is to replace the ones you
+                                                                    remove. You can
+                                                                    add more than one parameter for this purpose, and
+                                                                    each item
+                                                                    will be put in place of the ones you removed in
+                                                                    order.
+
+                                                                </li>
+                                                                <li>.reverse() method - reverses order of array</li>
+                                                                <li>.sort() method - sorts the order of array</li>
+                                                                <li>.indexOf() method - checks if a value exists in an
+                                                                    array. If the
+                                                                    value is there the (first occurance of the) index of
+                                                                    the item will
+                                                                    be returned.</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Mutidimentional Arrays - an array of arrays</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+                        <li>
+                            <h3>Chapter 2 - Sets</h3><br>
+                            <ul>
+                                <li>Data structure that represents collection of unique key values. </li>
+                                <li>Cannot hold duplicates </li>
+                                <li>To create a new set: <br>
+                                    <ul>
+                                        <li>const setName = new Set();</li>
+                                    </ul>
+                                </li>
+                                <li>.add() method - adds values to sets</li>
+                                <li>* if a string is added as an element, each character will be added seperately and
+                                    duplicate
+                                    characters will
+                                    not be added.
+                                </li>
+                                <li>.delete(), .has(), .includes(), .indexOf(), .size(), .clear() are all self
+                                    explanatory methods of
+                                    sets. </li>
+                                <li>How to convert a set into a string: <br>
+                                    <ul>
+                                        <li>2 ways:</li>
+                                        <li>Spread operator - const arrayName = [...setName];</li>
+                                        <li>Array.from() method - const arrayName = Array.from(setName);</li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <h3>Chapter 2 - Maps</h3><br>
+                            <ul>
+                                <li>Way to store key-pair values.</li>
+                                <li>Can use any data type as a key.</li>
+                                <li>Creating a map: <br>
+                                    <ul>
+                                        <li>const mapName = new Map();</li>
+                                    </ul>
+                                </li>
+                                <li>Adding pairs to a map: <br>
+                                    <ul>
+                                        <li>mapName.set(1, 'S');</li>
+                                    </ul>
+                                </li>
+                                <li>.get(), .has(), .size(), .delete(), .clear()</li>
+                                <li>* A map can be created with multiple values by using a nested array as parameter:
+                                    <br>
+                                    <ul>
+                                        <li>const mapName = new Map([['apples', 'oranges', 'pears'], ['Jane', 'John']]);
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Converting Maps into Arrays <br>
+                                    <ul>
+                                        <li>Like sets there are 2 ways: <br>
+                                            <ul>
+                                                <li>Spread operator - const arrayName = [...mapName];</li>
+                                                <li>Array.from() - const arrayName = Array.from(mapName);</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        <li>
+                            <h3>Designing a Better Mobile Advertising User Experience</h3><br>
+                            <ul>
+                                <li>Pop-up advirtisments are the most detested advertisements to users. When ads get in
+                                    the way
+                                    of content
+                                    you loose engagment. If you are going to place ads in your site, make them small,
+                                    dont let
+                                    them take
+                                    up 40-50% of your screen space. Video ads have higher converstion rates than
+                                    pictures.</li>
+                                <li>Things to remember: <br>
+                                <li>Stop using pop-ups and pop-overs</li>
+                                <li>Users dont visit your website to look at adds, they came for content.</li>
+                                <li>If you use ads, make them unobstrusive. Your content comes first.</li>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-        <li>
-            <h3>Chapter 2 - Sets</h3><br>
-            <ul>
-                <li>Make software easier to use.</li>
-                <li> Make most commonly used menu items at the bottom of the
-                    screen so they are easily reachable.</li>
-                <li>Placement matters - addressing reachability issues helps create a perception of speed. This
-                    improves engagement rates and user satisfaction.</li>
-                <li>Understanding matters - users need to understand the purpose of your app/site features -
-                    hamburger menu example.</li>
-            </ul>
         </li>
-        <li>
-            <h3>Designing Intuitive and Mobile Friendly Forms</h3><br>
-            <ul>
-                <li>Make things simple so users can understand them easily.</li>
-                <li>Most web forms are too long. Something to do to make froms shorter is to use hints instead
-                    of
-                    labels. Using float labels also helps users.</li>
-                <li>Make fields bigger for users to easily touch.</li>
-                <li>Entering information to a mobile device is a tedious and error prone process that leads
-                    users to
-                    abandon the form. Enabling autofill makes the forms quicker to fill out, reduces errors, and
-                    makes users
-                    more likely to complete the form.
-                </li>
-                <li>Passwords matter - Entering passwords are especially difficult on mobile devices. Masking
-                    passwords
-                    is something that can be done away with on mobile to decrease user frustraion. Give the user
-                    the option to
-                    mask the passord or not with the eye symbol in the password field.</li>
-                <li>Numbers matter - auto advancing credit card numbers, and formatting spaces between number
-                    groups helps
-                    users input their infomation.<br>
-                    When taking numbers ensure the number keypad is used on mobile. Default keyboard make
-                    inputting numbers
-                    tedious.</li>
-                <li>Calls matter - Dont force a copy and paste in order for users to call your number.</li>
-            </ul>
-        <li>
-            <h3>Designing a Better Mobile Advertising User Experience</h3><br>
-            <ul>
-                <li>Pop-up advirtisments are the most detested advertisements to users. When ads get in the way
-                    of content
-                    you loose engagment. If you are going to place ads in your site, make them small, dont let
-                    them take
-                    up 40-50% of your screen space. Video ads have higher converstion rates than pictures.</li>
-                <li>Things to remember: <br>
-                <li>Stop using pop-ups and pop-overs</li>
-                <li>Users dont visit your website to look at adds, they came for content.</li>
-                <li>If you use ads, make them unobstrusive. Your content comes first.</li>
         </li>
-    </ul>
-    </li>
-    </li>
     </ul>
     <script src="js/main.js"></script>
 </body>
