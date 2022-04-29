@@ -9,7 +9,7 @@ const topicsListElement = document.getElementById("week-menu-items");
 
 for (i = 0; i < topicsMenu.length; i++) {
 const liLink = document.createElement("a");
-liLink.setAttribute("href", topicsMenu[i][1]);
+liLink.setAttribute("href", '{topicsMenu[i][1]}');
 const liElement = document.createElement("li");
 
 topicsListElement.appendChild(liLink);
