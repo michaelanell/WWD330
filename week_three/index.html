@@ -1,0 +1,161 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WWD Week Three Notes</title>
+
+    <link href="css/small.css" rel="stylesheet" type="text/css">
+    <link href="css/medium.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Week Three Notes</h1>
+    <h2>JavaScript: Novice To Ninja - Sitepoint</h2>
+    <h3>Key notes from chapters 5-7</h3>
+    <ul>
+        <li>
+            <h3>Chapter 5: Objects</h3><br>
+            <ul>
+                <li>JavaScript objects are much like any other oop object, at least the basics.
+                </li>
+                <li>To create an object: <br>
+                    <ul>
+                        <li>const objectName = {};</li>
+                        <li>Shorthand method of creating an object if the <em>'a property key is the same as a variable
+                                name that the property value is assigned to':</em>
+                            <ul>
+                                <li>const name = 'Jane Austen';<br>
+                                    const realName = 'Jane Austen';<br>
+
+                                    // long way<br>
+                                    const author = { name: name, realName: realName };<br>
+
+                                    // short ES6 way<br>
+                                    const author = { name, realName };<br></li>
+                            </ul>
+                        </li>
+                        <li>To access a property use the . notation - author.name</li>
+                        <li>To call a method - author.write()</li>
+                        <li>Many built in objects available</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <h3>Chapter 6 - DOM</h3> <br>
+            <ul>
+                <li>The Document Object Model
+                    <br>
+                    <ul>
+                        <li>The DOM is a network of nodes on a webpage. </li>
+                        <li>HTML tag is the root node and everything else is a child of it.</li>
+                        <li>DOM provides several ways to access any page element with the following methods that return
+                            an array Like
+                            node object:<br>
+                            <ul>
+                                <li>objectName = document.elementYouWantToAccess;</li>
+                                <li>typeOf objectName;</li>
+                                <li>objectName.nodeType;</li>
+                                <li>objectName.nodeName;</li>
+                                <li>Document.body - returns body element of a web page</li>
+                                <li>Document.images - returns node list of all images contained in document</li>
+                                <li>Document.links - returns node list of all the a tag or area elements in document
+                                    that have the href attribute
+                                </li>
+                                <li>Document.anchors - returns a node list of all a tag elements that have the name
+                                    attribute</li>
+                                <li>Document.forms - returns a node list of all forms in the document</li>
+                                <li>getElementById()</li>
+                                <li>getElementsByTagName()</li>
+                                <li>getElementsByClassName()</li>
+                                <li>document.querySelector() - use CSS notation to find first element in
+                                    document that matches that matches the CSS selector provided as an argument
+                                </li>
+                                <li>document.querySelectorAll() - CSS notation returns node list of all elements in
+                                    document that match
+                                    CSS query selector</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </li>
+    </ul>
+    </li>
+
+    <li>
+        <h3>Chapter 3 - Sets</h3><br>
+        <ul>
+            <li>Data structure that represents collection of unique key values. </li>
+            <li>Cannot hold duplicates </li>
+            <li>To create a new set: <br>
+                <ul>
+                    <li>const setName = new Set();</li>
+                </ul>
+            </li>
+            <li>.add() method - adds values to sets</li>
+            <li>* if a string is added as an element, each character will be added seperately and
+                duplicate
+                characters will
+                not be added.
+            </li>
+            <li>.delete(), .has(), .includes(), .indexOf(), .size(), .clear() are all self
+                explanatory methods of
+                sets. </li>
+            <li>How to convert a set into a string: <br>
+                <ul>
+                    <li>2 ways:</li>
+                    <li>Spread operator - const arrayName = [...setName];</li>
+                    <li>Array.from() method - const arrayName = Array.from(setName);</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <h3>Chapter 3 - Maps</h3><br>
+        <ul>
+            <li>Way to store key-pair values.</li>
+            <li>Can use any data type as a key.</li>
+            <li>Creating a map: <br>
+                <ul>
+                    <li>const mapName = new Map();</li>
+                </ul>
+            </li>
+            <li>Adding pairs to a map: <br>
+                <ul>
+                    <li>mapName.set(1, 'S');</li>
+                </ul>
+            </li>
+            <li>.get(), .has(), .size(), .delete(), .clear()</li>
+            <li>* A map can be created with multiple values by using a nested array as parameter:
+                <br>
+                <ul>
+                    <li>const mapName = new Map([['apples', 'oranges', 'pears'], ['Jane', 'John']]);
+                    </li>
+                </ul>
+            </li>
+            <li>Converting Maps into Arrays <br>
+                <ul>
+                    <li>Like sets there are 2 ways: <br>
+                        <ul>
+                            <li>Spread operator - const arrayName = [...mapName];</li>
+                            <li>Array.from() - const arrayName = Array.from(mapName);</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+
+    </ul>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
