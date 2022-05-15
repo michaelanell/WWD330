@@ -11,14 +11,21 @@ function makeHero(event) {
 
     alert(JSON.stringify(hero)); // convert object to JSON string and display in alert dialog
     
+    //catch form values: 
 
     hero.realName = form.realName.value;
-hero.powers = [];
-for (let i=0; i < form.powers.length; i++) {
+    hero.powers = [];
+    for (let i=0; i < form.powers.length; i++) {
     if (form.powers[i].checked) {
         hero.powers.push(form.powers[i].value);
     }
 }
+hero.category = form.category.value;
+hero.age = form.age.value;
+hero.city = form.city.value;
+hero.origin = form.origin.value;
+
+
 return hero;
 }
 
