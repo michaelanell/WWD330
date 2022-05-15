@@ -1,8 +1,8 @@
 //
 const input = form.elements.searchInput;
 
-input.addEventListener('focus', () => alert('focused'), false);
-input.addEventListener('change', () => alert('changed'), false);
+//input.addEventListener('focus', () => alert('focused'), false);
+//input.addEventListener('change', () => alert('changed'), false);
 
 const form = document.forms['search'];
 form.addEventListener ('submit', search, false);
