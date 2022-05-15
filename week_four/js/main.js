@@ -9,4 +9,5 @@ form.addEventListener ('submit', search, false);
 
 function search() {
     alert(' Form Submitted');
+    event.preventDefault();
 }
