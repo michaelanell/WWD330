@@ -83,28 +83,37 @@
         </li>
         <li>
             <h3>Exception Handlers - try, catch, finally</h3><br>
-        <li>If you are unsure if a line of code will work and want to test it, put the code inside of a try{} block.
+            <ul>
+                <li>If you are unsure if a line of code will work and want to test it, put the code inside of a try{}
+                    block.
+                </li>
+                <li>Create a catch{} block to that will run if the code inside of the try{} block throws an exception.
+                    To create
+                    a catch block, pass the error to the catch block and write what you want to happen if an excception
+                    is
+                    thrown by the try block inside of the catch block.
+                </li>
+                <li>Lastly, to end your exception handler, add a final block after your catch block, that runs whether
+                    or not an
+                    exception occurrs.</li>
+                <li>Example:<br>
+                    function imaginarySquareRoot(number) {
+                    'use strict';
+                    let answer;
+                    try {
+                    answer = String(squareRoot(number));
+                    } catch(error) {
+                    answer = squareRoot(-number)+"i";
+                    } finally {
+                    return `+ or - ${answer}`;
+                    }
+                    }
+                </li>
+            </ul>
         </li>
-        <li>Create a catch{} block to that will run if the code inside of the try{} block throws an exception. To create
-            a catch block, pass the error to the catch block and write what you want to happen if an excception is
-            thrown by the try block inside of the catch block.
-        </li>
-        <li>Lastly, to end your exception handler, add a final block after your catch block, that runs whether or not an
-            exception occurrs.</li>
-        </li>
-        <li>Example:<br>
-            function imaginarySquareRoot(number) {
-            'use strict';
-            let answer;
-            try {
-            answer = String(squareRoot(number));
-            } catch(error) {
-            answer = squareRoot(-number)+"i";
-            } finally {
-            return `+ or - ${answer}`;
-            }
-            }
-        </li>
+
+
+
     </ul>
 </body>
 
