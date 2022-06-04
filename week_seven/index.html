@@ -1,0 +1,166 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Week Seven</title>
+
+    <link href="css/small.css" rel="stylesheet" type="text/css">
+    <link href="css/medium.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Week Seven</h1>
+    <h3>JAVASCRIPT: NOVICE TO NINJA, 2ND EDITION - Further funtions</h3>
+    <ul>
+        <li>
+            In Javascript, functions are 'first-class objects', meaning that they can have properties and methods.
+        </li>
+        <br>
+        <li>The Call Method
+            <ul>
+                <li>
+                    The call method is used to set .this value of a function. It works as follows:
+                    <ul>
+                        <li>function greeting(){<br>
+                            return `Hello, ${this.name}`;<br>
+                            }
+                        </li>
+                    </ul>
+                    Here is an object that has a name propety:
+                    <ul>
+                        <li>const player1 = {name: 'James' };</li>
+                    </ul>
+                    The call method can be used as follows to invoke the funciton and give an object as an argument:
+                    <ul>
+                        <li>
+                            greeting.call(player1);<br>
+                            returns: 'Hello, James'
+                        </li>
+                    </ul>
+                    If a funtion contains required parameters, provide them as arguments after the first argument, which
+                    is the value of this.
+                </li>
+            </ul>
+            <br>
+        </li>
+        <li>The Apply method
+            <ul>
+                <li>This method works the same as the call method, but the arguments are passed as an array, which is
+                    useful if
+                    your argmument is already in the form of an array.
+                </li>
+            </ul>
+            <br>
+        </li>
+        <li>Custom Properties
+            <ul>
+                <li> You can add your own properties to functions just as you can add them to objects.</li>
+                <li>This provides result caching AKA memoization</li>
+                <li>You can return values to a cache property, which means that the value is stored if needed multiple
+                    times
+                    rather than comupted over and over again.
+                </li>
+                <li>To use this property, save a value in the cache object demonstrated as follows:
+                    <ul>function myFunction(x) { <br>
+                        variName.cache = variName.cache || {}; <br>
+                        if (!variName.cashe[x]) {
+                        variName.cache[x] = x*x;
+                        }
+                        return variName.cache[x]
+                        }
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <br>
+        <li>Immediately Invoked Function Expressions (IIFE)
+            <ul>
+                <li>A function that in invoked as soon as it is defined. This
+                    is achieved by placing parentheses at the end of the function definition, and making the function an
+                    expresstion by wrapping the function in parenthese as follows: </li>
+                <ul>
+                    <li>
+                        (function() {const variName = 'A string';<br>
+                        comsole.log(`This is my variable: $[variName}`);
+                        })( ); <br>
+                        logs 'This is my variable: A string'
+                    </li>
+                </ul>
+            </ul>
+            <br>
+            Question: What is an example of when someone may want to use this type of expression?
+            <ul>
+                <li>Some examples given in the chaper using IIFEs are:
+                    <ul>
+                        <li>Temporary variables - "Placing any code that uses the temporary variable inside an IIFE will
+                            ensure it is only available while the IIFE is invoked, then it will disappear."</li>
+                        <li>Initialization Code - IIEFs can be used to initialize code that won't be needed again.
+                            "Because the code is only run once, there is no need to create any reusable, named
+                            functions, and all the variables will also be temporary."
+                        </li>
+                        <li>Safe Use of Strict Mode - recommened way to use strict mode is to place the
+                            code inside of an IIFE like so:
+                            <ul>
+                                <li>
+                                    (function( ) {<br>
+                                    'use strict';<br>
+                                    // the code<br>
+                                    })( );<br>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Creating Self-contained Code Blocks - use IIFE to "enclose a block of code inside its own
+                            private scope so it does not interfere with any other part of the program"</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <br>
+        <li>Functions can Define and Rewrite themselves<br>
+            <ul>
+                <li>A function can both define and rewite itself. This is accomplished by "This is done by
+                    assigning an anonymous function to a variable that has the same name as the function."
+                    Here is an example from the book:</li>
+                <ul>
+                    <li>function party(){ <br>
+                        console.log('Wow this is amazing!');<br>
+                        party = function(){ <br>
+                        console.log('Been there, got the T-Shirt');<br>
+                        }<br>
+                        }<br>
+                    </li>
+                </ul>
+            </ul>
+        </li>
+        <li>Recursive Functions<br>
+            <ul>
+                <li>Recursice functions invoke themselves until a condition is met.</li>
+            </ul>
+        </li>
+        <br>
+        <li>Callbacks - function that is passed to another function as an argument, and then
+            'invoked inside the function they are passed to.'<br>
+        </li>
+        <br>
+        <li>Function can Return Functions
+            <ul>
+                <li>Here is an example of a function that returns another function:
+                    function return() {<br>
+                    console.log('return() called');<br>
+                    return fucntion() {
+                    console.log('Hello world');
+                    }
+                    }
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
