@@ -17,6 +17,10 @@ h2 {
     background-color: #fff;
 }
 
+.to-do-menu-items {
+    list-style: none;
+}
+
 ul li {
     color: #333;
 }
@@ -26,12 +30,26 @@ ul li {
     margin: 20px auto;
 }
 
+ #to-do-menu-items {
+    list-style: none;
+}
+
+.toDoCheckboxes {
+    position:fixed; left: 20px;
+}
+
+#filter_complete, #filter_incomplete {
+    margin: 10px;
+    margin-right: 0;
+}
+
 footer {
     font-family: 'Quicksand', sans-serif;
     color: #fff;
     background-color: #0C7BE8;
     padding: 10px 10px;
     text-align: center;
+    width: 25%;
 }
 
 #lastModified,

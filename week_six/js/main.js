@@ -8,9 +8,12 @@ let toDoItemsArray;
 form.addEventListener('submit', addItem);
 document.querySelector('#to-do-menu-items').addEventListener('change', boxChecked);
 
+// if complete button is clicked
+document.getElementById('filter_complete').addEventListener("click", complete);
+document.getElementById('filter_incomplete').addEventListener("click", incomplete);
+
 let checkboxes = document.getElementsByClassName('toDoCheckboxes');
-//let checkboxes = document.querySelectorAll('input[type="checkbox"]');
-//checkboxes.addEventListener('change', boxChecked);
+
 
 function createToDoList() {    
     console.log('got here');
@@ -26,6 +29,7 @@ function createToDoList() {
 
     const liElement = document.createElement("li");
     liElement.setAttribute('id', listItemId);
+    liElement.setAttribute('class', 'to_do_list_item');
 
     const checkboxElement = document.createElement("input");
     checkboxElement.setAttribute('type','checkbox');
@@ -40,25 +44,11 @@ function createToDoList() {
 }
 
 function boxChecked(){
-    //let element = document.getElementById('checkbox-' + i);
-    //if (event.checked);
-    //event.remove();
-
-//     console.log('Got to the boxes');
 
     checkboxesArray = Array.from(checkboxes);
 
-//    console.log(checkboxes);
-//    console.log(checkboxesArray.length);
-// for (let i = 0; i < checkboxesArray.length; i++) {
-//     document.getElementById('checkbox-' + i).onclick = function() {
-//         var element = this.parentElement;
-//         div.style.display = "none";
-//       }
-// }
-
   for (let i = 0; i < checkboxesArray.length; i++) {
-    if(document.getElementById('checkbox-' + i).checked) {
+    if (document.getElementById('checkbox-' + i).checked) {
         const elementCheckbox = document.getElementById('checkbox-' + i);
         const elementListItem = document.getElementById('item-' + i);
 
@@ -66,10 +56,37 @@ function boxChecked(){
         elementListItem.style.display = "none";
     
     }
-
   }
+}
 
+ function complete() {
+     checkboxesArray = Array.from(checkboxes);
+     for (let i = 0; i < checkboxesArray.length; i++) {
+       if (document.getElementById('checkbox-' + i).checked) {
+           // const elementCheckbox = document.getElementById('checkbox-' + i);
+            const elementListItem = document.getElementById('item-' + i);
+    
+            elementListItem.style.display = "block";
+        } else {
+            const elementListItem = document.getElementById('item-' + i);
+            elementListItem.style.display = "none";
+        }
+      }
+ }
 
+ function incomplete() {
+    checkboxesArray = Array.from(checkboxes);
+    for (let i = 0; i < checkboxesArray.length; i++) {
+      if (document.getElementById('checkbox-' + i).checked == false) {
+          // const elementCheckbox = document.getElementById('checkbox-' + i);
+           const elementListItem = document.getElementById('item-' + i);
+   
+           elementListItem.style.display = "block";
+       } else {
+           const elementListItem = document.getElementById('item-' + i);
+           elementListItem.style.display = "none";
+       }
+     }
 }
 
 
