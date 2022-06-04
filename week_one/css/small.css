@@ -26,6 +26,12 @@ ul li {
     margin: 20px auto;
 }
 
+textarea {
+    width: 800px;
+    height: 250px;
+    background-color: lightblue;
+}
+
 footer {
     font-family: 'Quicksand', sans-serif;
     color: #fff;
@@ -39,3 +45,4 @@ footer {
     font-family: 'Quicksand', sans-serif;
     color: #fff;
 }
+
