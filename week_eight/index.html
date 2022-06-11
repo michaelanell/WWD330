@@ -1,0 +1,72 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Week Eight</title>
+
+    <link href="css/small.css" rel="stylesheet" type="text/css">
+    <link href="css/medium.css" rel="stylesheet" type="text/css">
+</head>
+
+<body">
+    <h1 class="regular-heading">CSS3 Transforms and Transitions
+    </h1>
+    <ul>
+        <li>The transform property " let's you translate, rotate, scale, and/or skew any element on the page."</li>
+        <li>Translations<br>
+            <ul>
+                <li>let you move elements left/right/up/down.</li>
+                <li>Does not affect the flow of the document.</li>
+                <li>Translation only moves elements relative to their current position.</li>
+                <li>translate(x,y) function - moves elements x from the left, and y from the top.</li>
+                <li>eg. transform: translate(34px, -24px);</li>
+                <li>translateX() function if you would just like to move an element horizontally.</li>
+                <li>translateY() function if you would just like to move an element vertically.</li>
+            </ul>
+        </li>
+        <li>Scaling<br>
+            <ul>
+                <li>scale(x,y) function scales an element by the given arguments, horizontally (x)
+                    then vertically (y).
+                </li>
+                <li>If you one value is provided, it is used both horizontally and verically.
+                    This maintains the element's original aspect ratio.
+                </li>
+                <li>Can also use the scaleX() and scaleY functions if all you want to do is
+                    scale the element one way.
+                </li>
+                <li>Scaling also has no impact on the document flow - text around it will not
+                    accomodate it's size.
+                </li>
+                <li>The default point of origin is the element's center.</li>
+            </ul>
+        </li>
+        <li>Rotation<br>
+            <ul>
+                <li>rotate() fucntion rotates an element around the point of origin
+                    by the given angle value. The default point of origin is the element's center.
+                </li>
+            </ul>
+        </li>
+        <li>Skew<br>
+        <li>skew(x,y) specifies a skew along the x and y values. </li>
+        </li>
+    </ul>
+
+
+    <!-- The example -->
+    <div class="ad-ad2">
+        <h1>Put your<br> <span>dukes</span> <br>up, sire</h1>
+    </div>
+
+    <p>I learned about transformations and animations last year in advanced CSS.
+        I used them at work this week:
+        <img src="screenshot.png" width="500">
+    </p>
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
