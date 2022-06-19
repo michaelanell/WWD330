@@ -1,0 +1,85 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Week Nine</title>
+
+    <link href="css/small.css" rel="stylesheet" type="text/css">
+    <link href="css/medium.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h2>The Window Object</h2>
+    <ul>
+        <li>Represented by the broswer window contains a web page.</li>
+        <li>There is a global object in every JS enviornment. </li>
+        <li>Variables created in global scope are properties of the global object.</li>
+        <li>In a browser enviornment the global object is the window object.</li>
+        <li>The Browser Object Model<br>
+            <ul>
+                <li>Collection of properties and methods that have information about the bowser and
+                    computer screen.
+                </li>
+                <li>No offical standard, but there are properties and methods supported
+                    by all major browsers, available through the window object.
+                </li>
+            </ul>
+        </li>
+        <li>Avoid using the window object to refer to global variables, as it makes code better portable
+            between JS eviornments.
+        </li>
+        <li>alert(), confirm(), and prompt() are all methods of the window object.</li>
+        <li>confirm() - 'will stop the execution of the program and display a confirmation dialog that shows the message
+            provided as an argument, and giving the options of OK or Cancel.'</li>
+        <li>window.prompt() - will stop the execution of the program. It displays a dialog that shows a message provided
+            as an argument, as well as an input field that allows the user to enter text. This text is then returned as
+            a string when the user clicks OK. </li>
+        <li>eg. window.prompt('Please enter your name:');</li>
+        <h2>Browser Information</h2>
+        <li>Navigator object - 'contains information about the browser being used.'</li>
+        <li>userAgent property - returns information about the browser and operating system
+            that is being used.
+        </li>
+        <li>This information is not reliable since it can be modified by a user to show it
+            as being a browser it is not.
+        </li>
+        <li>window.location property - object that contains info about the url of the current page. <br>
+            <ul>
+                <li>href property - returns the full URL as a string (can be changed by assignment.)</li>
+                <li>protocol property - returns a string describing the protocol used (such as http, https, pop2, ftp
+                    etc.)</li>
+                <li>host property - returns a string describing the domain of the current URL and the port number.</li>
+                <li>hostname property - returns a string describing the domain of the current URL</li>
+                <li>port property - returns a string describing the port number</li>
+                <li>pathname property - returns a string of the path that follows the domain</li>
+                <li>search property - returns a string that starts with a “?” followed by the query string parameters
+                </li>
+                <li>hash property - returns a string that starts with a “#” followed by the fragment identifier.</li>
+                <li>origin property - returns a string that shows the protocol and domain where the current page
+                    originated from.</li>
+                <li>reload() method - can be used to force a reload of the current page. If it’s given a parameter of
+                    true, it will force the browser to reload the page from the server, instead of using a cached page.
+                </li>
+                <li>assign() method - can be used to load another resource from a URL provided as a parameter, for
+                    example</li>
+                <li>replace() method - similar to the assign() method, except the current page will not be stored in the
+                    session
+                    history, so the user will be unable to navigate back to it using the back button</li>
+                <li>toString() method - returns a string containing the whole URL</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+
+
+
+    </ul>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
