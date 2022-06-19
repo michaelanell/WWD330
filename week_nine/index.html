@@ -47,6 +47,7 @@
             as being a browser it is not.
         </li>
         <li>window.location property - object that contains info about the url of the current page. <br>
+            Other properties:
             <ul>
                 <li>href property - returns the full URL as a string (can be changed by assignment.)</li>
                 <li>protocol property - returns a string describing the protocol used (such as http, https, pop2, ftp
@@ -69,10 +70,38 @@
                     session
                     history, so the user will be unable to navigate back to it using the back button</li>
                 <li>toString() method - returns a string containing the whole URL</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            </ul>
+            <h2>Browser History</h2>
+            <ul>
+                <li>window.history property - accesses information about any previously visited pages in the
+                    current browser session.</li>
+                <li>window.history.length property - shows how many pages have been visited before arriving at the
+                    current page</li>
+                <li>window.history.go() method - used to go to a specific page (where 0 is the current page).</li>
+                <li>window.history.forward() - navigate forwards by one page.</li>
+                <li>window.history.back() - navigate backwards by one page.</li>
+            </ul>
+            <h2>Screen Information</h2>
+            <ul>
+                <li>window.screen object contains information about the screen the browser is displayed on.</li>
+                <li>window.screen.height - returns height of the screen in pixels.</li>
+                <li>window.screen.width - returns width of the screen in pixels.</li>
+                <li>colorDepth property - used to find the color bit depth of the user’s monitor.</li>
+
+            </ul>
+            <h2>The Document Object</h2>
+            <ul>
+                <li>The document object, an object of the window object, has properties and methods that deal with the
+                    page that has been loaded into the window. These include:</li>
+                <li>document.write() - the write() method writes a string of text to the page. </li>
+            </ul>
+            <h2>Cookies</h2>
+            <ul>
+                <li>Small files saved locally on user's computer.</li>
+                <li>Stores information that can then be retrieved between requests</li>
+                <li>Can only be read by a web page from the same domain that set them.</li>
+                <li>Cookies can be used for personalizing a user’s browsing experience, storing user preferences,
+                    keeping track of user choices (such as a shopping cart), authentication and tracking users. </li>
             </ul>
         </li>
 
