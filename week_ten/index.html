@@ -1,0 +1,140 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Week Ten</title>
+
+    <link href="css/small.css" rel="stylesheet" type="text/css">
+    <link href="css/medium.css" rel="stylesheet" type="text/css">
+</head>
+
+<body">
+    <h1 class="regular-heading">Client-side Form Validation
+    </h1>
+    <ul>
+        <li>Ensuring that user forms are filled out in the correct format.</li>
+        <li>Important to let a user know straigt away if they need to fix an input.</li>
+        <li>The main reasons form validation is important:<br>
+            <ul>
+                <li>What to collect the right data in the correct format.</li>
+                <li>What to protect user's data - eg. having many password rules to make passwords secure.</li>
+                <li>Protect applications from malicious users who want to misuse unprotected forms. </li>
+            </ul>
+        </li>
+        <li>Types of client side validation:<br>
+            <ul>
+                <li>Built in form validation - uses HTML 5, doesn't require much JS. Has better performance than js.
+                    Not as customizable though.
+                    <ul>
+                        <li>Built-in form validation is created using validation attributes on HTML elements. These
+                            attributes include:
+                            <ul>
+                                <li>required - makes a field required
+                                </li>
+                                <li>minlength - specifies min length of textual data input
+                                </li>
+                                <li>maxlength - specifies max length of textual data input
+                                </li>
+                                <li>min - specifies min values of numerical input
+                                </li>
+                                <li>max - specifies max values of numerical input
+                                </li>
+                                <li>type - specifies what type of input the data needs to be. eg. email address, number
+                                </li>
+                                <li>pattern - specifies a regular expression that defines a pattern the input needs to
+                                    follow
+                                    <ul>
+                                        <li>Regular expression (regex) - "is a pattern that can be used to match
+                                            character combinations in text strings"</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            When a form is completed and matches all these rules, the input is considered valid.
+                        </li>
+                        <li>When an element is valid:
+                            <ul>
+                                <li>"The element matches the :valid CSS pseudo-class, which lets you apply a specific
+                                    style to valid elements."</li>
+                                <li>"If the user tries to send the data, the browser will submit the form, provided
+                                    there is nothing else stopping it from doing so (e.g., JavaScript)."</li>
+                            </ul>
+                        </li>
+                        <li>When an element is invalid:
+                            <ul>
+                                <li>"The element matches the :invalid CSS pseudo-class, and sometimes other UI
+                                    pseudo-classes (e.g., :out-of-range) depending on the error, which lets you apply a
+                                    specific style to invalid elements."</li>
+                                <li>"If the user tries to send the data, the browser will block the form and display an
+                                    error message.
+                                    "</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- Example -->
+                            Example:
+                            <form>
+                                <label for="choose">Would you prefer a banana or cherry? (required)</label>
+                                <input id="choose" name="i_like" required>
+                                <button>Submit</button>
+                            </form>
+                        </li>
+                        <li>
+                            <!-- Example using regular expression -->
+                            Regular Expression Example:
+                            <form>
+                                <label for="choose">Would you prefer a banana or a cherry?</label>
+                                <input id="choose" name="i_like" required pattern="[Bb]anana|[Cc]herry">
+                                <button>Submit</button>
+                            </form>
+                        </li>
+                        <li>
+                            <!-- Example constraining values of entries -->
+                            Constraining Values Examples:
+                            <form>
+
+                                <div>
+                                    <label for="choose">Would you prefer a banana or a cherry?</label>
+                                    <input type="text" id="choose" name="i_like" required minlength="6" maxlength="6">
+                                </div>
+                                <div>
+                                    <label for="number">How many would you like?</label>
+                                    <input type="number" id="number" name="amount" value="1" min="1" max="10">
+                                </div>
+                                <div>
+                                    <button>Submit</button>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        <li>JavaScript - validation is completely customizable, but you have to write it from scratch or find a
+            library.
+            <ul>
+                <li>Why you would want to use JS for you form validation:
+                    <ul>
+                        <li>You want to customize the look and feel of you form's error messages</li>
+                        <li>Address the issue of legacy browsers that do not support HTML's built-in form validation
+                        </li>
+                    </ul>
+                </li>
+                <li>The Constraint Validation API
+                    <ul>
+                        <li>consists of a set of methods and properties available on</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li></li>
+            </ul>
+        </li>
+
+    </ul>
+    </li>
+
+    </ul>
+
+</html>

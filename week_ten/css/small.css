@@ -1,0 +1,78 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.regular-heading {
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #6956F6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+}
+
+ul li {
+    color: #333;
+}
+
+.site-inner {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+footer {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    background-color: #0C7BE8;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+#lastModified,
+#currentdate {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+/* Example */
+.ad-ad2 {
+    padding-left: 50px;
+    text-align: center;
+}
+.ad-ad2 h1 span {
+  
+    font-size: 30px;
+    color: #999;
+    display:inline-block;
+}
+
+.ad-ad2 h1:hover span {
+    color: #ff0000;
+    /**** Note that you should not declare more than one transform property because the second will
+    override the first - to add multiple transformations, just add the values, each separarated
+    by a space ****/
+    transform: rotate(10deg) translateX(40px) scale(1.5);
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+input:invalid {
+    border: 2px dashed red;
+  }
+
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+  input:valid {
+    border: 2px solid black;
+  }
