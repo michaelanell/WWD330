@@ -1,20 +1,10 @@
-function createMenuItems() {
-let weeklyTopics = new Map();
+const email = document.getElementById("mail");
 
-weeklyTopics.set('Week One','week_one').set('Week Two', 'week_two').set('Week Three', 'week_three').set('Week Four', 'week_four').set('Week Five', 'week_five').set('Week Six','week_six').set('Week Seven','week_seven').set('Week Eight','week_eight');
-
-topicsMenu = Array.from(weeklyTopics);
-
-const topicsListElement = document.getElementById("week-menu-items");
-
-for (i = 0; i < topicsMenu.length; i++) {
-const liLink = document.createElement("a");
-liLink.setAttribute("href", `${topicsMenu[i][1]}`);
-const liElement = document.createElement("li");
-
-topicsListElement.appendChild(liLink);
-liLink.appendChild(liElement);
-
-liElement.innerHTML = topicsMenu[i][0];
-}
-}
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I am expecting an e-mail address!");
+    email.reportValidity();
+  } else {
+    email.setCustomValidity("");
+  }
+});

@@ -123,12 +123,38 @@
                 </li>
                 <li>The Constraint Validation API
                     <ul>
-                        <li>consists of a set of methods and properties available on</li>
-                        <li></li>
-                        <li></li>
+                        <li>consists of a set of methods and properties available on the button, fieldset, input,
+                            output, select, and textarea form element DOM interfaces.</li>
+                        <li>It adds use of the following properties to the DOM elements:
+                            <ul>
+                                <li>validationMessage</li>
+                                <li>validity</li>
+                                <li>patternMismatch</li>
+                                <li>tooLong</li>
+                                <li>tooShort</li>
+                                <li>rangeOverflow</li>
+                                <li>rangeUnderflow</li>
+                                <li>typeMismatch</li>
+                                <li>valid</li>
+                                <li>valueMissing</li>
+                                <li>willValidate</li>
+                            </ul>
+                            And the following methods:
+                            <ul>
+                                <li>checkValidity()</li>
+                                <li>reportValidity()</li>
+                                <li>setCustomValidity(message)</li>
+                            </ul>
+                        </li>
+                        <li>Customized Error Message Example
+                            form>
+                            <label for="mail">I would like you to provide me with an e-mail address:</label>
+                            <input type="email" id="mail" name="mail">
+                            <button>Submit</button>
+                            </form>
+                        </li>
                     </ul>
                 </li>
-                <li></li>
             </ul>
         </li>
 
