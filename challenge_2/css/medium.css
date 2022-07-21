@@ -1,0 +1,16 @@
+@media only screen and (min-width: 32.5em) {
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    .site-inner {
+        max-width: 950px;
+        margin: 20px auto;
+    
+    }
+
+    footer {
+        border-radius: 10px;
+    }
+}
